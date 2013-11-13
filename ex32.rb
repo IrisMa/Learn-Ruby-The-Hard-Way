@@ -21,12 +21,14 @@ end
 # we can also build arrays, first start with an empty one.
 elements = []
 
+#excise 2: 直接將 elements 賦值為 (0..5)，而不需使用 for-loop
+elements = Range.new(0,5)
 #then use a range object to do 0 to 5 count
-for i in (0..5)
-	puts "Adding #{i} to the list."
+#for i in (0..5)
+#	puts "Adding #{i} to the list."
 	# push is a function that arrays understand
-	elements.push(i)
-end
+#	elements.push(i)
+#end
 
 #now we can puts them out too
 for i in elements
